@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		838B2C7A2F7635E30093C663 /* HDRefresher in Frameworks */ = {isa = PBXBuildFile; productRef = 838B2C792F7635E30093C663 /* HDRefresher */; };
+		838B2CA92F7659D50093C663 /* refresh_complete.json in Resources */ = {isa = PBXBuildFile; fileRef = 838B2C9E2F7659D50093C663 /* refresh_complete.json */; };
+		838B2CAA2F7659D50093C663 /* refresh_progressing.json in Resources */ = {isa = PBXBuildFile; fileRef = 838B2C9F2F7659D50093C663 /* refresh_progressing.json */; };
+		838B2CAB2F7659D50093C663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838B2CA12F7659D50093C663 /* Assets.xcassets */; };
+		838B2CAC2F7659D50093C663 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B2CA22F7659D50093C663 /* ContentView.swift */; };
+		838B2CAD2F7659D50093C663 /* DefaultHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B2CA32F7659D50093C663 /* DefaultHeaderView.swift */; };
+		838B2CAE2F7659D50093C663 /* LottieRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B2CA42F7659D50093C663 /* LottieRefreshHeader.swift */; };
+		838B2CAF2F7659D50093C663 /* HDRfresherDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B2CA52F7659D50093C663 /* HDRfresherDemoApp.swift */; };
+		838B2CB02F7659D50093C663 /* LottieHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B2CA62F7659D50093C663 /* LottieHeaderView.swift */; };
+		838B2CB12F7659D50093C663 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B2CA72F7659D50093C663 /* Modifier.swift */; };
+		838B2CB42F765E8E0093C663 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 838B2CB32F765E8E0093C663 /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		838B2C612F76355C0093C663 /* HDRfresherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDRfresherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		838B2C9E2F7659D50093C663 /* refresh_complete.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = refresh_complete.json; sourceTree = "<group>"; };
+		838B2C9F2F7659D50093C663 /* refresh_progressing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = refresh_progressing.json; sourceTree = "<group>"; };
+		838B2CA12F7659D50093C663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		838B2CA22F7659D50093C663 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		838B2CA32F7659D50093C663 /* DefaultHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHeaderView.swift; sourceTree = "<group>"; };
+		838B2CA42F7659D50093C663 /* LottieRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieRefreshHeader.swift; sourceTree = "<group>"; };
+		838B2CA52F7659D50093C663 /* HDRfresherDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDRfresherDemoApp.swift; sourceTree = "<group>"; };
+		838B2CA62F7659D50093C663 /* LottieHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieHeaderView.swift; sourceTree = "<group>"; };
+		838B2CA72F7659D50093C663 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		838B2C5E2F76355C0093C663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838B2C7A2F7635E30093C663 /* HDRefresher in Frameworks */,
+				838B2CB42F765E8E0093C663 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		838B2C582F76355C0093C663 = {
+			isa = PBXGroup;
+			children = (
+				838B2CA82F7659D50093C663 /* HDRfresherDemo */,
+				838B2C622F76355C0093C663 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		838B2C622F76355C0093C663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				838B2C612F76355C0093C663 /* HDRfresherDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		838B2CA02F7659D50093C663 /* lottieJson */ = {
+			isa = PBXGroup;
+			children = (
+				838B2C9E2F7659D50093C663 /* refresh_complete.json */,
+				838B2C9F2F7659D50093C663 /* refresh_progressing.json */,
+			);
+			path = lottieJson;
+			sourceTree = "<group>";
+		};
+		838B2CA82F7659D50093C663 /* HDRfresherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				838B2CA02F7659D50093C663 /* lottieJson */,
+				838B2CA12F7659D50093C663 /* Assets.xcassets */,
+				838B2CA22F7659D50093C663 /* ContentView.swift */,
+				838B2CA32F7659D50093C663 /* DefaultHeaderView.swift */,
+				838B2CA62F7659D50093C663 /* LottieHeaderView.swift */,
+				838B2CA42F7659D50093C663 /* LottieRefreshHeader.swift */,
+				838B2CA52F7659D50093C663 /* HDRfresherDemoApp.swift */,
+				838B2CA72F7659D50093C663 /* Modifier.swift */,
+			);
+			path = HDRfresherDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		838B2C602F76355C0093C663 /* HDRfresherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838B2C6C2F76355E0093C663 /* Build configuration list for PBXNativeTarget "HDRfresherDemo" */;
+			buildPhases = (
+				838B2C5D2F76355C0093C663 /* Sources */,
+				838B2C5E2F76355C0093C663 /* Frameworks */,
+				838B2C5F2F76355C0093C663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDRfresherDemo;
+			packageProductDependencies = (
+				838B2C792F7635E30093C663 /* HDRefresher */,
+				838B2CB32F765E8E0093C663 /* Lottie */,
+			);
+			productName = HDRfresherDemo;
+			productReference = 838B2C612F76355C0093C663 /* HDRfresherDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		838B2C592F76355C0093C663 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					838B2C602F76355C0093C663 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 838B2C5C2F76355C0093C663 /* Build configuration list for PBXProject "HDRfresherDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 838B2C582F76355C0093C663;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				838B2C782F7635E30093C663 /* XCLocalSwiftPackageReference "../../HDRefresher" */,
+				838B2CB22F765E8D0093C663 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 838B2C622F76355C0093C663 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				838B2C602F76355C0093C663 /* HDRfresherDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		838B2C5F2F76355C0093C663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838B2CA92F7659D50093C663 /* refresh_complete.json in Resources */,
+				838B2CAA2F7659D50093C663 /* refresh_progressing.json in Resources */,
+				838B2CAB2F7659D50093C663 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		838B2C5D2F76355C0093C663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838B2CAC2F7659D50093C663 /* ContentView.swift in Sources */,
+				838B2CAD2F7659D50093C663 /* DefaultHeaderView.swift in Sources */,
+				838B2CAE2F7659D50093C663 /* LottieRefreshHeader.swift in Sources */,
+				838B2CAF2F7659D50093C663 /* HDRfresherDemoApp.swift in Sources */,
+				838B2CB02F7659D50093C663 /* LottieHeaderView.swift in Sources */,
+				838B2CB12F7659D50093C663 /* Modifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		838B2C6A2F76355E0093C663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		838B2C6B2F76355E0093C663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		838B2C6D2F76355E0093C663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hd.refresher.HDRfresherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		838B2C6E2F76355E0093C663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hd.refresher.HDRfresherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		838B2C5C2F76355C0093C663 /* Build configuration list for PBXProject "HDRfresherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838B2C6A2F76355E0093C663 /* Debug */,
+				838B2C6B2F76355E0093C663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		838B2C6C2F76355E0093C663 /* Build configuration list for PBXNativeTarget "HDRfresherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838B2C6D2F76355E0093C663 /* Debug */,
+				838B2C6E2F76355E0093C663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		838B2C782F7635E30093C663 /* XCLocalSwiftPackageReference "../../HDRefresher" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../HDRefresher;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		838B2CB22F765E8D0093C663 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		838B2C792F7635E30093C663 /* HDRefresher */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HDRefresher;
+		};
+		838B2CB32F765E8E0093C663 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 838B2CB22F765E8D0093C663 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 838B2C592F76355C0093C663 /* Project object */;
+}
