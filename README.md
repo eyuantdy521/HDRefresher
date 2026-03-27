@@ -23,8 +23,6 @@ SwiftUI 下拉刷新组件
 1. 选择 `File` → `Add Packages...`
 2. 输入仓库 URL：
 https://github.com/eyuantdy521/HDRefresher.git
-
-text
 3. 选择版本规则（推荐使用 "Up to Next Major"）
 4. 点击 "Add Package"
 
