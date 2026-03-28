@@ -1,5 +1,5 @@
 //
-//  DefaultHeaderView.swift
+//  LottieHeaderView.swift
 //  HDRfresherDemo
 //
 //  Created by Chris on 2026/3/27.
@@ -8,7 +8,7 @@
 import SwiftUI
 import HDRefresher
 
-struct DefaultHeaderView: View {
+struct LottieHeaderView: View {
     var body: some View {
         VStack {
             ForEach(0..<30) { index in
@@ -24,15 +24,17 @@ struct DefaultHeaderView: View {
                     .offset(x: CGFloat.random(in: -(kScreenWidth - 100)/2...(kScreenWidth - 100)/2))
             }
         }
-        .pullToRefresh(config: .init().completedDuration(3)) {
+        .pullToRefresh(config: .init(completedDuration: 3), action: {
             try? await Task.sleep(nanoseconds: UInt64(3 * 1_000_000_000))
-        }
+        }, header: { state, progress in
+            LottieRefreshHeader(state: state, progress: progress)
+                .equatable()
+        })
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white)
-        .ignoresSafeArea(.container, edges: .bottom)
     }
 }
 
 #Preview {
-    DefaultHeaderView()
+    LottieHeaderView()
 }

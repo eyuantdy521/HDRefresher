@@ -5,22 +5,27 @@ import SwiftUI
 /// - triggered："松开刷新" 文字提示
 /// - refreshing：ProgressView 旋转动画
 /// - completed：刷新完成
-struct DefaultRefreshHeader: View, @MainActor Equatable {
-    let state: RefreshState
-    let progress: CGFloat
-    
-    var isCompleted: Bool {
+public struct DefaultRefreshHeader: View, @MainActor Equatable {
+    public let state: RefreshState
+    public let progress: CGFloat
+
+    public var isCompleted: Bool {
         state == .completed
     }
-    
+
     @State private var isRefreshing: Bool = false
 
+    public init(state: RefreshState, progress: CGFloat) {
+        self.state = state
+        self.progress = progress
+    }
+
     // Equatable 优化：帮助 SwiftUI 跳过不必要的 diff 计算
-    static func == (lhs: DefaultRefreshHeader, rhs: DefaultRefreshHeader) -> Bool {
+    public static func == (lhs: DefaultRefreshHeader, rhs: DefaultRefreshHeader) -> Bool {
         lhs.state == rhs.state && lhs.progress == rhs.progress
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack {
             Group {
                 switch state {
@@ -90,6 +95,78 @@ struct DefaultRefreshHeader: View, @MainActor Equatable {
         }
     }
 }
+
+// MARK: - Default Load More Footer
+
+/// 默认上拉加载更多底部视图
+public struct DefaultLoadMoreFooter: View, @MainActor Equatable {
+    public let state: LoadMoreState
+    @State private var isRefreshing: Bool = false
+
+    public init(state: LoadMoreState) {
+        self.state = state
+    }
+
+    public var body: some View {
+        ZStack {
+            switch state {
+            case .idle:
+                Image(systemName: "swirl.circle.righthalf.filled")
+                    .font(.system(size: 20, weight: .medium))
+                    .foreGColor(.red)
+            case .pulling(let progress):
+                Image(systemName: "swirl.circle.righthalf.filled")
+                    .font(.system(size: 20, weight: .medium))
+                    .foreGColor(.red)
+                    .rotationEffect(.degrees(-progress * 360))
+            case .triggered:
+                Text("松开加载")
+                    .font(.subheadline)
+                    .foreGColor(.gray)
+            case .loading:
+                Image(systemName: "swirl.circle.righthalf.filled")
+                    .font(.system(size: 20, weight: .medium))
+                    .foreGColor(.red)
+                    .rotationEffect(.degrees(isRefreshing ? 0 : 360))
+                    .onAppear {
+                        withAnimation(.linear(duration: 1).repeatForever(autoreverses: false)) {
+                            isRefreshing = true
+                        }
+                    }
+                    .onDisappear {
+                        isRefreshing = false
+                    }
+            case .completed:
+                HStack(spacing: 6) {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foreGColor(.green)
+                    Text("刷新完成")
+                        .font(.subheadline)
+                        .foreGColor(.gray)
+                }
+            case .noMore:
+                Text("没有更多了")
+                    .font(.subheadline)
+                    .foreGColor(.gray)
+            }
+        }
+        .frame(height: 60)
+        .frame(maxWidth: .infinity)
+    }
+    
+    // Equatable 优化：帮助 SwiftUI 跳过不必要的 diff 计算
+    public static func == (lhs: DefaultLoadMoreFooter, rhs: DefaultLoadMoreFooter) -> Bool {
+        lhs.state == rhs.state
+    }
+}
+
+extension LoadMoreState {
+    var pullProgress: CGFloat {
+        if case .pulling(let p) = self { return p }
+        return 0
+    }
+}
+
 
 extension View {
     func foreGColor(_ color: Color) -> some View {
