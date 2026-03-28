@@ -15,6 +15,10 @@ SwiftUI 下拉刷新组件
 - Xcode 14.0+
 - Swift 5.7+
 
+
+https://github.com/user-attachments/assets/43408935-efda-47d4-bfdc-54ff304c43ce
+
+
 ## 安装
 
 ### Swift Package Manager
